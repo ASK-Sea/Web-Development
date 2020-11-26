@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Book Catalog Search</title>
+  </head>
+  <body>
+    <div>
+      <h1>Book Catalog Search</h1>
+      <br />
+    </div>
+    <!-- A HTML form to allow user requests a search for the book. -->
+    <!-- TODO 1: Fill in the action of the form with "results.php" and 
+                 the form data is sent with the HTTP POST method. -->
+    <form action="results.php" method="POST">
+      <div>
+        <div class="form-group">
+          <div>
+            <label>Choose Search Type: <br /></label>
+            <select name="searchtype" id="type" class="form-control">
+              <option value="author">Author</option>
+              <option value="title">Title</option>
+              <option value="isbn">Isbn</option>
+            </select>
+          </div>
+          <!-- TODO 2: Add a drop-down list, named it as "searchtype" 
+                     of 3 options which are "author", "title" and "isbn". -->
+          <br/>
+          <div>
+            <label>Search Term:</label> <br />
+            <input type="text" name="searchterm" size="40"maxlength="40"class="form-control"/>
+          </div>
+          <!-- TODO 3: Add an input type of text box, named it as "searchterm", set the size to 40. -->
+          <br/>
+          <div class="col-md-4 col-sm-6">
+            <input type="submit"name="submit" value="Search" class="btn btn-primary"/>
+          </div>
+          <!-- TODO 4: Add a submit button, named it as "submit", set the display text as "Search".  -->
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

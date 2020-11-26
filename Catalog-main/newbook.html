@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Book Entry</title>
+  </head>
+  <body>
+    <div>
+      <h1>New Book Entry</h1>
+    </div>
+
+    <!-- A HTML form to allow user enters a new book. -->
+    <!-- Send the form-data to a file named "insert_book.php" with the HTTP POST method. -->
+    <form action="insert_book.php" method="POST">
+      <div>
+        <div>
+        <!-- An input type of text box, named "isbn" with maxlength "13" and size "13". -->
+          <div class="col-md-4 col-sm-6">
+            <input type="text" name="isbn" maxlength="13" size="13"class="form-control" placeholder="ISBN"/>
+          </div>
+        <!-- An input type of text box, named "author" with maxlength "30" and size "30". -->
+          <br/>
+          <div class="col-md-4 col-sm-6">
+            <input type="text" name="author" maxlength="30" size="30" class="form-control" placeholder="Author"/>
+          </div>
+        <!-- An input type of text box, named "title" with maxlength "60" and size "30". -->
+          <br />
+          <div class="col-md-4 col-sm-6">
+            <input type="text" name="title"maxlength="60"size="30"class="form-control"placeholder="Title"/>
+          </div>
+        <!-- An input type of text box, named "price" with maxlength "7" and size "7". -->
+          <br />
+          <div class="col-md-4 col-sm-6">
+            <input type="text" name="price" maxlength="7" size="7" class="form-control" placeholder="Price"/>
+            <br/>
+        <!-- A submit button with the display text as "Register" -->
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <input type="submit" name="submit" value="Insert"class="btn btn-success"/>
+          </div>
+        </div>       
+      </div>
+    </form>
+  </body>
+</html>
